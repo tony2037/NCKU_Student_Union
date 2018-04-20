@@ -26,7 +26,7 @@ if sys.argv[1].startswith('--'):
 
  elif option == 'help':
 
-  print 'help documention'
+  print 'Usage : [--version] [--create_list] [--add_face [face_id]]'
 
  else:
 
