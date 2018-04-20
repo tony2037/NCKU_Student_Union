@@ -1,7 +1,7 @@
 import cognitive_face as CF
 import cv2
 
-img = open("./Su.jpg",'rb')
+img = open("./Suu.jpg",'rb')
 
 
 KEY = "8b25b24d3a464d27ad8aa1b4ea84bb07"  # Replace with a valid subscription key (keeping the quotes in place).
@@ -14,6 +14,7 @@ CF.BaseUrl.set(BASE_URL)
 faces = CF.face.detect(img)
 print(faces)
 
+print(CF.face.find_similars(faces[0]['faceId'],face_list_id = 'ncku',max_candidates_return=5))
 
 """
 return :

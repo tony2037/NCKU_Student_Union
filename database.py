@@ -1,4 +1,4 @@
-# -*- coding: UTF-8 -*-  
+# -*- coding: UTF-8 -*-
 
 import sys
 
@@ -20,15 +20,15 @@ if sys.argv[1].startswith('--'):
 
  option = sys.argv[1][2:] # 取出sys.argv[1]的數值但是忽略掉'--'這兩個字元
 
- if option == 'version': 
+ if option == 'version':
 
   print 'Version 1.0'
 
  if option == 'create_list':
-     CF.face_list.create("NCKU")
+     CF.face_list.create("ncku")
 
  if option == 'add_face':
-     CF.face_list.add_face(sys.argv[2][:], 'NCKU')
+     CF.face_list.add_face(sys.argv[2][:], 'ncku')
 
  elif option == 'help':
 
