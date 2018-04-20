@@ -4,6 +4,12 @@ import sys
 
 import cognitive_face as CF
 
+KEY = "8b25b24d3a464d27ad8aa1b4ea84bb07"  # Replace with a valid subscription key (keeping the quotes in place).
+CF.Key.set(KEY)
+
+BASE_URL = "https://eastasia.api.cognitive.microsoft.com/face/v1.0"
+CF.BaseUrl.set(BASE_URL)
+
 if len(sys.argv) < 2: #len小於2也就是不帶參數啦
 
  print 'no argument'
